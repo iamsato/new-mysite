@@ -3,6 +3,9 @@ body{
     font-family: "Inter", sans-serif;
     color: #30343a;
 }
+.spacer{
+    height: 50px;
+}
 /* Header */
 header{
     color: #ed254e;
@@ -199,7 +202,7 @@ footer > p{
     .hero{
         margin-top: 60px;
         margin-bottom: 0;
-        height: 75vh;
+        height: 70vh;
     }
     .hero-title{
         font-size: 30px;
