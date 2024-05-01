@@ -1,0 +1,256 @@
+body{
+    background-color: #f4fffd;
+    font-family: "Inter", sans-serif;
+    color: #30343a;
+}
+/* Header */
+header{
+    color: #ed254e;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+.header-container > h1{
+    font-size: 20px;
+}
+.nav-btn{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-btn > li{
+    margin-right: 10px;
+}
+.nav-btn > li > a{
+    text-decoration: none;
+    color: #ed254e;
+    padding: 5px 0;
+    transition: .3s;
+    letter-spacing: .05em;
+}
+.nav-btn > li > a:hover{
+    color: #F9DC5C;
+}
+/* Hero */
+.hero{
+    margin-top: 70px;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    text-align: center;
+    font-weight: bold;
+}
+.hero-container{
+    padding: 0 20px;
+}
+.hero-title{
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    letter-spacing: .1em;
+}
+.hero-subtitle{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: .1em;
+    margin-bottom: 15px;
+}
+.hero-text{
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: .16em;
+}
+/* About */
+.title{
+    background-color: #30343a;
+    color: #f4fffd;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: .05em;
+}
+.sub-title{
+    color: #011936;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+}
+.profile{
+    padding:  35px 20px 75px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.profile > img{
+    width: calc(50% / 2);
+}
+.pro-text{
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.pro-text > p > a{
+    text-decoration: none;
+    color: #ed254e;
+}
+.pro-text > p > a:hover{
+    text-decoration: none;
+    color: #F9DC5C;
+}
+/* Osusume */
+.info{
+    color: #ed254e;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.pickup{
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.pickup::-webkit-scrollbar{
+    background-color: transparent;
+    height: 3px;
+}
+.pickup::-webkit-scrollbar-thumb{
+    background: #F9DC5C;
+}
+.pickup-kid{
+    margin: 10px;
+    width: 20%;
+    flex-shrink: 0;
+}
+.pickup-kid > p{
+    margin: 10px 0;
+    font-weight: 600;
+}
+/* Sns */
+.sns{
+    margin-bottom: 40px;
+}
+.sns-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sns-container > a > img{
+    width: 100px;
+    margin: 20px 70px;
+}
+.sns-container > a > img:hover{
+    transform: scale(1.3, 1.3);
+}
+.sankou{
+    opacity: 0.1;
+    height: 10px;
+}
+.sankou > a{
+    text-decoration: none;
+    color: #30343a;
+}
+/* Footer */
+footer{
+    background-color: #011936;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p{
+    display: block;
+    color: #f4fffd;
+    font-size: 20px;
+}
+@media screen and (max-width:767px){
+    /* Header */
+    .header-container{
+        padding: 15px;
+    }
+    .header-container > h1{
+        font-size: 15px;
+    }
+    .nav-btn > li{
+        margin-right: 8px;
+        font-size: 12px;
+    }
+    /* Hero */
+    .hero{
+        margin-top: 60px;
+        margin-bottom: 0;
+        height: 75vh;
+    }
+    .hero-title{
+        font-size: 30px;
+    }
+    .hero-subtitle{
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .hero-text{
+        font-size: 13px;
+    }
+    /* About */
+    .title{
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .sub-title{
+        font-size: 15px;
+    }
+    .profile{
+        padding: 30px 10px;
+    }
+    .pro-text{
+        font-size: 10px;
+    }
+    /* Osusume */
+    .info{
+        font-size: 13px;
+    }
+    .pickup{
+        margin-bottom: 40px;
+    }
+    .pickup-kid{
+        width: 30%;
+    }
+    .pickup-text{
+        font-size: 13px;
+    }
+    /* Sns */
+    .sns{
+        margin-bottom: 30px;
+    }
+    .sns-container > a > img{
+        width: 70px;
+        margin: 20px 30px;
+    }
+    /* Footer */
+    footer{
+        height: 40px;
+    }
+    footer > p{
+        font-size: 10px;
+    }
+}
